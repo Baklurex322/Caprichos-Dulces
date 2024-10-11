@@ -1,0 +1,28 @@
+nav{
+    width: 100%;
+    height: 100px;
+
+    /*background-color: rgb(125, 93, 123);*/
+    border-color: black; border-width: 3px; border-style: solid;
+}
+
+.logo{
+    width: 10%;
+    height: 100%;
+    float: left;
+    margin: 0 10%;
+}
+
+.btn-nav{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn-nav button{
+    height: 40%;
+    width: 12.5%;
+    margin-right: 3%;
+}

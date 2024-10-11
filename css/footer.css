@@ -1,0 +1,43 @@
+footer{
+    width: 100%;
+    height: 100px;
+
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.division-footer{
+    height: 80%;
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#info-Cont{
+    margin: 0 3% 0 3%;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 0 5px 0 5px;
+}
+
+footer img{
+    width: 35px;
+}
+
+h2, h3{
+    color:aliceblue;
+}
+h2{
+    font-weight: 900;
+}
+h3{
+font-size: .8em;
+}
+/*
+*/

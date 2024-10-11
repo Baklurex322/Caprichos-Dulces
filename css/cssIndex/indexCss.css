@@ -1,0 +1,31 @@
+nav{height: 15vh;}
+footer{height: 22vh;}
+main{height: 63vh;}
+
+main{
+    width: 100%;
+    /*background-color: aquamarine;*/
+    border-color: black; border-width: 3px; border-style: solid;
+
+}
+
+#banner{
+    /* background-image: url('../../images/banner.jpg');*/
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(60%);
+}
+
+header{
+    height: 12%;
+    position: relative;
+    top: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header button{
+    width: 30%;
+    height: 100%;
+}
