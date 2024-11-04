@@ -50,10 +50,29 @@ a{
     color: aliceblue;
 }
 input{
+    box-sizing: border-box;
     border-radius: 8px;
     border-style: none;
     text-align: center;
+    outline: none; /* Remueve el contorno predeterminado del navegador */
+    transition: 0.3s ease; /* Transición suave */
 }
+input:focus {
+    border: 3px solid #B0578D; /* Cambia el color al enfocarse */
+
+  }
+
+  textarea{
+    border-radius: 8px;
+    border-style: none;
+    text-align: center;
+    outline: none; /* Remueve el contorno predeterminado del navegador */
+    transition: 0.3s ease; /* Transición suave */
+  }
+  textarea:focus {
+    border: 3px solid #B0578D; /* Cambia el color al enfocarse */
+
+  }
 .marginPage{
     margin-top: 40px;
 }

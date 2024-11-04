@@ -41,6 +41,8 @@ a{
     background-image: url('../../images/banner.jpg'); 
     background-size: cover;
     background-origin: padding-box;
+    border-radius: 8px 0 0 8px; 
+    object-fit: cover;
 }
 
 
