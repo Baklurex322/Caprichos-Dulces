@@ -96,9 +96,18 @@ main{}
   width: 50vh;
   height: 40vh;
   position: fixed;
-  right: 0;
+  right: -50vh;
   background-color: #b0578d;
   z-index: 2;
+  transition: 1s ease;
+  
+}
+
+.desactivado{
+  display: none;
+}
+.animacion{
+  right: -1vh !important;
 }
 .contenedorProducto{
   width: 80%;

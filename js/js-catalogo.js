@@ -44,3 +44,30 @@ scrollContainer.addEventListener('mousemove', (e) => {
   const walk = (x - startX) * 3; // Ajusta la velocidad de desplazamiento
   scrollContainer.scrollLeft = scrollLeft - walk;
 });
+
+
+function animar(){
+  
+  const elemento = document.getElementById("carrito");
+
+  if (elemento.classList.contains("animacion")) {
+    document.getElementById("carrito").classList.remove("animacion")
+  } else {
+    document.getElementById("carrito").classList.add("animacion")
+  }
+}
+
+function activarCategoria(elemento){
+  if(elemento === 'pasteles'){
+    document.getElementById("pasteles").classList.remove("desactivado")
+    document.getElementById("galletas").classList.add("desactivado")
+    document.getElementById("roles").classList.add("desactivado")
+  }
+  if(elemento === 'galletas'){
+    document.getElementById("pasteles").classList.add("desactivado")
+    document.getElementById("galletas").classList.remove("desactivado")
+    document.getElementById("roles").classList.add("desactivado")
+  }
+
+  
+}

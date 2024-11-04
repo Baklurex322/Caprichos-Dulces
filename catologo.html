@@ -27,7 +27,7 @@
     <!-- Encabezado -->
     <main>
       <div id="carrito">
-        <div class="botonCar"><img class="iconCar" src="images/carrito.png"></div>
+        <div class="botonCar" ><img onclick="animar()"  class="iconCar" src="images/carrito.png"></div>
         <div class="contenedorProducto drag-scroll">
           <div id="Producto-1" class="productoAgregado">Producto</div>
           <div id="Producto-2" class="productoAgregado">Producto</div>
@@ -37,9 +37,9 @@
         <section id="carruselSect">
             <div id="carrusel" class="slider marginPage">
                 <div id="carrusel-slides" class="slides">
-                  <div class="slide">1</div>
-                  <div class="slide">2</div>
-                  <div class="slide">3</div>
+                  <div class="slide" onclick="activarCategoria('pasteles')">1</div>
+                  <div class="slide" onclick="activarCategoria('galletas')">2</div>
+                  <div class="slide" onclick="roles()">3</div>
                   <div class="slide">4</div>
                   <div class="slide">5</div>
                   <div class="slide">6</div>
@@ -53,7 +53,7 @@
               </div>
         </section>
 
-        <section id="pasteles" class="contenedor">
+        <section id="pasteles" class="contenedor desactivado">
             <div class="cont-producto marginPage">
                 <div class="img-producto">
                     <img class="img-pro" src="images/Flor amarilla.jpg" alt="">
@@ -95,6 +95,12 @@
                     <input class="marginPage btnDetalles btn-css" type="submit" value="Agregar">
                 </div>
             </div>
+        </section>
+        <section id="galletas" class="contenedor desactivado">
+
+        </section>
+        <section id="roles" class="contenedor desactivado">
+
         </section>
     </main>
     <!-- Pie de pagina -->
