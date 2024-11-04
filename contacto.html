@@ -11,19 +11,84 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cssPrincipal.css">
+    <link rel="stylesheet" href="css/cssContacto/contacto-css.css">
 </head>
 <body>
     <!-- Barra de navegacion -->
-    <nav>
-
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch("nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+          });
+      </script>
     <!-- Encabezado -->
-    <header>
+    <main>
+        <h1>Contacto</h1>
+        <!--Grid contacto-->
+        <div id="Contacto-Links">
+            <div class="content-link">
+                <div class="icon-link"></div>
+                <div class="detalle-link">
+                    <h3>Facebook</h3>
+                    <a href="">Direccion</a>
+                </div>
+            </div>
 
-    </header>
+            <div class="content-link">
+                <div class="icon-link"> </div>
+                <div class="detalle-link">
+                    <H3>WhatsApp</H3>
+                    <a href="">Direccion</a>
+                </div>
+            </div>
+
+            <div class="content-link">
+                <div class="icon-link"></div>
+                <div class="detalle-link">
+                    <h3>Instagram</h3>
+                    <a href="">Direccion</a>
+                </div>
+            </div>
+
+            <div class="content-link">
+                <div class="icon-link"></div>
+                <div class="detalle-link">
+                    <h3>Correo</h3>
+                    <a href="">Direccion</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Forms-->
+        <div id="Forms-Links">
+            <div id="fondo-forms"></div>
+            <div id="formsL">
+                <h2>Datos personales</h2>
+                <div class="formsText conjuntoForm">
+                    <input type="text" placeholder="Nombre(s)">
+                    <input type="text" placeholder="Apellidos"> 
+                </div>
+                <div class="formsText conjuntoForm" >
+                    <input type="text" placeholder="Telefono">
+                </div>
+                <input class="formsText2" type="text" placeholder="Correo">
+                <input class="formsText formLargo" type="text" placeholder="Mensaje">
+                <input class="btn-css btn-contact" type="button" value="Enviar" placeholder="Enviar">
+                
+            </div>
+        </div>
+    </main>
     <!-- Pie de pagina -->
-    <footer>
-
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      </script>
 </body>
 </html>

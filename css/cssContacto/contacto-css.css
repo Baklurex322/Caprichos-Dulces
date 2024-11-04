@@ -1,0 +1,82 @@
+
+#Contacto-Links{
+    
+    width: 70%;
+    margin: 50px 0 50px 0;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+#Contacto-Links h3{
+    font-weight: 700;
+}
+
+.icon-link{
+    background-color: #D988B9;
+    width: 80px;
+    height: 80px;
+}
+
+a{
+    font-size: .8rem;
+}
+
+#Forms-Links{
+    display: flex;
+
+    width: 80%;
+    margin-left: 10%;
+    background-color: #FACBEA;
+    height: 400px;
+    border-radius: 10px;
+
+    margin-bottom: 50px;
+}
+
+#fondo-forms{
+    width: 40%;
+    height: 100%;
+    background-image: url('../../images/banner.jpg'); 
+    background-size: cover;
+    background-origin: padding-box;
+}
+
+
+input{
+    border-radius: 8px;
+    border-style: none;
+    height: 40px;
+    text-align: center;
+}
+#formsL{
+    width: 60%;
+    padding: 10px;
+}
+.formsText{
+    width: 100%;
+    margin-top: 15px;
+}
+.formsText2{
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 5%;
+}
+.conjuntoForm input{
+    width: 42.5%;
+    margin-left: 5%;
+}
+.formLargo{
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+}
+
+.btn-contact{
+    width: 60%;
+    margin-top: 15px;
+    margin-left: 20%;
+    background-color: #D988B9;
+    color: aliceblue;
+}

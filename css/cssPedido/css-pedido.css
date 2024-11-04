@@ -1,0 +1,114 @@
+main{
+    
+}
+
+h1{
+    font-weight: 900;
+}
+
+.principalPedido{
+    background-color: #D988B9;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 8px;
+    display: flex;
+
+    height: 450px;
+}
+
+.partInfo{
+    height: 100%;
+    width: 40%;
+}
+.partInfo h2{
+    color: aliceblue;
+    font-weight: 900;
+    padding-top: 5%;
+}
+.partInfo .textoInfo{
+    width: 80%;
+    margin-left: 10%;
+    height: 70%;
+    margin-top: 10%;
+}
+.partPay{
+    width: 60%;
+    height: 100%;
+}
+
+.btnPay{
+    border-radius: 0;
+    height: 10%;
+    width: 30%;
+    background-color: #B0578D;
+}
+.infoPay{
+    height: 90%;
+    background-color: #FACBEA;
+    border-bottom-right-radius: 8px;
+
+}
+.tab{
+    background-color: #B0578D;
+    width: 30%;
+    height: 100%;
+    cursor:pointer;
+    text-align: center;
+    align-content: center;
+      transition:.5s ease;
+      &:hover {
+        background-color: #FACBEA;
+        color:white;
+      }
+}
+main .tab-group {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    font-size: 1.2em;
+    }
+
+    .active {
+    background-color: #FACBEA;
+    
+    }
+    .tab-group a{
+        color: aliceblue;
+    }
+    .active a{
+        color:black;
+    }
+    
+
+.info{
+    width: 70%;
+    margin-left: 15%;
+    height: 80%;
+    padding-top: 10%;
+
+    display: grid;
+    justify-items: center;
+
+}
+.separacion{
+    margin-top: 20px;
+}
+.textAreaCorreo{
+    width: 100%;
+}
+.btn-css{
+    width: 50%;
+    height: 40px;
+}
+
+.desaparecer{
+    display: none;
+}
+.info .textoInfo{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+.info h3, p{
+    padding: 10px 0 10px 0;
+}

@@ -11,19 +11,73 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cssPrincipal.css">
+    <link rel="stylesheet" href="css/cssPedido/css-pedido.css">
 </head>
 <body>
+       
     <!-- Barra de navegacion -->
-    <nav>
-
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch("nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+          });
+      </script>
     <!-- Encabezado -->
-    <header>
+    <main>
+         
+        <h1 class="marginPage">Realizar Pedido</h1>
+        <section class="principalPedido marginPage">
+            <div class="partInfo">
+                <h2>Datos del pedido</h2>
+                <input type="text" class="textoInfo" placeholder="Informacion del pedido">
+            </div>
+            <div class="partPay">
+                <ul class="tab-group">
+                    <li onclick="Paypal()" id="Paypal-Btn" class="tab active"><a href="#signup">Sign Up</a></li>
+                    <li onclick="Tranfer()" id="Transfer-Btn" class="tab "><a href="#login">Log In</a></li>
+                </ul>
+                <div id="Paypal-info" class="infoPay">
+                    <div class="info">
+                        <p>Es requerido ingresar tu correo electrónico vinculado a
+                            Paypal. Esto es para realizar una factura virtual con los
+                            datos de tu pedido, en esta misma se incluirá tu nombre
+                            y el monto que se debe pagar para realizar el pedido. 
+                            </p>
+                        <input class="separacion textAreaCorreo" type="text" placeholder="Correo electronico">
+                        <input class="separacion btn-css" type="button" value="Enviar">
+                    </div>
+                </div>
 
-    </header>
+                <div id="Transfer-info" class="infoPay desaparecer">
+                    <div class="info">
+                        <h3>IMPORTANTE</h3>
+                        <p>Enviar foto de la transferencia al siguiente número de
+                            WhatsApp: xxx xxx xxxx. 
+                            </p>
+                        <div class="textoInfo">
+                            <h3>Banco</h3>
+                            <p>Numero de cuenta</p>
+                            <p>Nombre del asosiado</p>
+                        </div>
+                        <input class="separacion btn-css" type="button" value="Enviar">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- Pie de pagina -->
-    <footer>
-
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      </script>
+<!-- JS -->
+<script src="js/js-pedido.js"></script>
 </body>
 </html>

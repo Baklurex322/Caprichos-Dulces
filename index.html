@@ -19,52 +19,29 @@
 </head>
 <body>
     <!-- Barra de navegacion -->
-    <nav>
-        <div class="logo" >
-            <a href="#!">
-                <img src="images/logo.png" alt="Logo" height="80%" style="margin: 10% 0;">
-            </a>
-        </div>
-        
-        <div class="btn-nav">
-            <button>Inicio</button>
-            <button>Contacto</button>
-            <button>Catalogo</button>
-            <button>Pedido</button>
-        </div>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch("nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+          });
+      </script>
     <!-- main -->
     <main id="banner">
         <header>
-            <button>Contacto</button>
-            <button>Catalogo</button>
+            <button onclick="location.href='catologo.html'">Contacto</button>
+            <button onclick="location.href='contacto.html'">Catalogo</button>
         </header>
     </main>
     <!-- Pie de pagina -->
-    <footer>
-        <div id="boton-Cont" class="division-footer">
-            <img src="images/logo2.png" alt="">
-            <h2>Redes Sociales</h2>
-            <div id="redes">
-                <img src="images/logo2.png" alt="">
-                <img src="images/logo2.png" alt="">
-                <img src="images/logo2.png" alt="">
-            </div>
-        </div>
-
-        <div id="info-Cont" class="division-footer">
-            <h2>Información</h2>
-
-            <h3>Direccion</h3>
-            <h3>Numero telefono</h3>
-            <h3>Correo electronico</h3>
-        </div>
-
-        <div id="admin" class="division-footer">
-            <h2>Contacto</h2>
-
-            <h3>Adminstrador</h3>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      </script>
 </body>
 </html>

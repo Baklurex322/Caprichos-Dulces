@@ -11,19 +11,101 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cssPrincipal.css">
+    <link rel="stylesheet" href="css/cssCatologo/css-catalogo.css">
 </head>
 <body>
     <!-- Barra de navegacion -->
-    <nav>
-
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch("nav.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+          });
+      </script>
     <!-- Encabezado -->
-    <header>
+    <main>
+      <div id="carrito">
+        <div class="botonCar"><img class="iconCar" src="images/carrito.png"></div>
+        <div class="contenedorProducto drag-scroll">
+          <div id="Producto-1" class="productoAgregado">Producto</div>
+          <div id="Producto-2" class="productoAgregado">Producto</div>
+        </div>
+      </div>
+        <h1 class="marginPage">Catalogo</h1>
+        <section id="carruselSect">
+            <div id="carrusel" class="slider marginPage">
+                <div id="carrusel-slides" class="slides">
+                  <div class="slide">1</div>
+                  <div class="slide">2</div>
+                  <div class="slide">3</div>
+                  <div class="slide">4</div>
+                  <div class="slide">5</div>
+                  <div class="slide">6</div>
+                  <div class="slide">7</div>
+                  <div class="slide">8</div>
+                  <div class="slide">9</div>
+                  <div class="slide">10</div>
+                </div>
+                <button class="btn-prev">
+                <button class="btn-next">
+              </div>
+        </section>
 
-    </header>
+        <section id="pasteles" class="contenedor">
+            <div class="cont-producto marginPage">
+                <div class="img-producto">
+                    <img class="img-pro" src="images/Flor amarilla.jpg" alt="">
+                </div>
+
+                <div class="info-producto">
+                    <h2>Nombre del Producto</h2>
+                    <div class="detalles">
+                        <div class="eleccion">
+                            <h3>Extras</h3>
+                            <div class="radioForm marginDetalles">
+                                <input type="checkbox" name="extra" value="1">Nuez
+                                <input type="checkbox" name="extra" value="2">Galleta
+                                <input type="checkbox" name="extra" value="3">Malvavisco
+                            </div>
+                            <h3>Sabores</h3>
+                            <select name="select" class="marginDetalles selectSabores">
+                                <option value="value1">Chocolate</option>
+                                <option value="value2">Vainilla</option>
+                                <option value="value3">Naranja</option>
+                              </select>
+                        </div>
+
+                        <div class="cantidad">
+                            <h3>Precio producto base</h3>
+                            <h3 class="marginDetalles">$340</h3>
+                            <h3>Cantidad</h3>
+                            <input class="marginDetalles selectSabores" style="text-align: left;" type="number" name="cantidadProducto" id="cantidadProducto" placeholder="0" oninput="validarNumero(this)">
+                            <script>
+                                function validarNumero(input) {
+                                  if (input.value.length > 3) {
+                                    input.value = input.value.slice(0, 3); // Limita a 3 cifras
+                                  }
+                                }
+                                </script>
+                        </div>
+                    </div>
+                    <textarea name="textDetalles" id="textDetalles" class="marginPage textDetalles" type="" placeholder="Escribir detalles del pedido"></textarea>
+                    <input class="marginPage btnDetalles btn-css" type="submit" value="Agregar">
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- Pie de pagina -->
-    <footer>
-
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      </script>
+    <script src="js/js-catalogo.js"></script>
 </body>
 </html>

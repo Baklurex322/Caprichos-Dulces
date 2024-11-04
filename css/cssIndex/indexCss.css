@@ -1,16 +1,11 @@
-nav{height: 15vh;}
-footer{height: 22vh;}
-main{height: 63vh;}
+main{height: 80vh;}
 
 main{
     width: 100%;
-    /*background-color: aquamarine;*/
-    border-color: black; border-width: 3px; border-style: solid;
-
 }
 
 #banner{
-    /* background-image: url('../../images/banner.jpg');*/
+    /*background-image: url('../../images/banner.jpg'); */
     background-position: center;
     background-size: cover;
     filter: grayscale(60%);
@@ -28,4 +23,11 @@ header{
 header button{
     width: 30%;
     height: 100%;
+    color:aliceblue;
+
+    background-color: #ff7ccb;
+    transition: .5s;
+}
+header button:hover{
+    filter: brightness(80%);
 }
