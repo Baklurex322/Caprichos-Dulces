@@ -14,22 +14,20 @@ main{}
 .cont-producto{
     background-color: #D988B9;
     width: 100%;
-    height: 400px;
+    height: auto;
+    padding: 50px 0px 50px 0px;
     border-radius: 8px;
     display: flex;
 }
 .img-pro{
     width: 60%;
-    height: 80%;
-    margin-left:20%;
     border-radius: 10px; 
-  object-fit: cover;
+    object-fit: cover;
+    margin-left: 20%;
 }
 .img-producto{
     width: 40%;
-    height: 100%;
     align-content: center;
-    
 }
 
 

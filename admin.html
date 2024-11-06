@@ -11,19 +11,120 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cssPrincipal.css">
+    <link rel="stylesheet" href="css/cssCatologo/css-catalogo.css">
+    <link rel="stylesheet" href="css/cssAdmin/css-Admin.css">
 </head>
 <body>
-    <!-- Barra de navegacion -->
-    <nav>
-
-    </nav>
     <!-- Encabezado -->
-    <header>
+    <button onclick="subirPagina()" id="btnSubir">Subir</button>
 
-    </header>
-    <!-- Pie de pagina -->
-    <footer>
+    <main>
+        <section id="agregarProducto-" class="contenedor agregarProductos">
+            <div class="cont-producto marginPage">
+                <div class="img-producto">
+                    <input class="img-pro" type="file">
+                </div>
 
-    </footer>
+                <div class="info-producto">
+                    <h2>Nombre del Producto</h2>
+                    <div class="detalles">
+                        <div class="eleccion">
+                            <h3>Extras</h3>
+                            <div class="lista-container">
+                                <input type="text" class="input-item"placeholder="Añadir nueva tarea" />
+                                <button class="btn-agregar">Añadir</button>
+                                <ul class="lista"></ul>
+                              </div>
+                            <h3>Sabores</h3>
+                            <div class="lista-container">
+                                <input type="text"class="input-item" id="sabor-input" placeholder="Añadir nueva tarea" />
+                                <button class="btn-agregar">Añadir</button>
+                                <ul class="lista"></ul>
+                              </div>
+                        </div>
+
+                        <div class="cantidad">
+                            <h3>Precio producto base</h3>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <textarea name="textDetalles" id="textDetalles" class="marginPage textDetalles" type="" placeholder="Escribir detalles del pedido"></textarea>
+                    <input class="marginPage btnDetalles btn-css" type="submit" value="Agregar">
+                </div>
+            </div>
+        </section>
+
+          <h1 class="marginPage">Catalogo</h1>
+          <section id="carruselSect">
+              <div id="carrusel" class="slider marginPage">
+                  <div id="carrusel-slides" class="slides">
+                    <div class="slide" onclick="activarCategoria('pasteles'); abrirSeccion('pasteles');">1</div>
+                    <div class="slide" onclick="activarCategoria('galletas'); abrirSeccion('galletas');">2</div>
+                    <div class="slide" onclick="roles()">3</div>
+                    <div class="slide">4</div>
+                    <div class="slide">5</div>
+                    <div class="slide">6</div>
+                    <div class="slide">7</div>
+                    <div class="slide">8</div>
+                    <div class="slide">9</div>
+                    <div class="slide">10</div>
+                  </div>
+                  <button class="btn-prev">
+                  <button class="btn-next">
+                </div>
+          </section>
+  
+          <section id="pasteles" class="contenedor desactivado">
+              <div class="cont-producto marginPage">
+                  <div class="img-producto">
+                      <img class="img-pro" src="images/Flor amarilla.jpg" alt="">
+                  </div>
+  
+                  <div class="info-producto">
+                      <h2>Nombre del Producto</h2>
+                      <div class="detalles">
+                        <div class="eleccion">
+                            <h3>Extras</h3>
+                            <div class="lista-container">
+                                <input type="text" class="input-item"placeholder="Añadir nueva tarea" />
+                                <button class="btn-agregar">Añadir</button>
+                                <ul class="lista">
+                                    <li> Nuez <button onclick="eliminarItem(this)">❌</button></li>
+                                    <li> Bombones <button onclick="eliminarItem(this)">❌</button></li>
+                                </ul>
+                              </div>
+                            <h3>Sabores</h3>
+                            <div class="lista-container">
+                                <input type="text"class="input-item" id="sabor-input" placeholder="Añadir nueva tarea" />
+                                <button class="btn-agregar">Añadir</button>
+                                <ul class="lista">
+                                    <li> Chocolate <button onclick="eliminarItem(this)">❌</button></li>
+                                    <li> Vainilla <button onclick="eliminarItem(this)">❌</button></li>
+                                </ul>
+                              </div>
+                        </div>
+  
+                          <div class="cantidad">
+                              <h3>Precio producto base</h3>
+                              <input type="text" value="320">
+                          </div>
+                      </div>
+                      <textarea name="textDetalles" id="textDetalles" class="marginPage textDetalles" type="" placeholder="Escribir detalles del pedido">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus diam erat, vitae suscipit neque laoreet sed. Suspendisse fringilla, justo id luctus sagittis, erat nisl facilisis
+                      </textarea>
+                      <input class="marginPage btnDetalles btn-css" type="submit" value="Actualizar">
+                      <input class="marginPage btnDetalles btn-css" type="submit" value="Eleminar">
+                  </div>
+              </div>
+          </section>
+          <section id="galletas" class="contenedor desactivado">
+  
+          </section>
+          <section id="roles" class="contenedor desactivado">
+  
+          </section>
+      </main>
+      <script src="js/js-admin.js"> </script>      
 </body>
 </html>
