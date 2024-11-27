@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,16 +23,35 @@
         </section>
 
         <section class="IS-form">
-            <div class="formsIS">
+            <form  class="formsIS" name="form"onsubtmi="return false;">
                 <h1>Iniciar Sesión</h1>
-                <input type="text" placeholder="Correo">
-                <input type="text" placeholder="Contraseña">
-                <div class="contra"><a href="">Olvidé mi contraseña</a></div>
-                <input onclick="location.href='admin.html'" class="btn-css" type="button" value="Acceder">
-            </div>
+                <input type="text" name="login"  placeholder="Correo" required>
+                <input  name ="password" type="password" placeholder="Contraseña" required>
+                <div class="contra"><a href="">Olvid&eacute; mi contrase&ntilde;a</a></div>
+                <input  class="btn-css" type="button" value="Acceder" onclick="acceder()">
+            </form>
         </section>
     </main>
     <!-- Pie de pagina -->
 
 </body>
+   
+     <script>
+        function acceder()
+         {
+             const correo = document.form.login.value;
+             const contraseña = document.form.password.value
+             
+             
+             if(correo === "caprichosdulces@gmail.com" && contraseña == "Hola123456")
+                 {
+                     
+                     window.location.href="admin.html"
+                 }
+             else{
+                 alert("Datos incorrectos");
+             }
+         }
+    </script>
+
 </html>

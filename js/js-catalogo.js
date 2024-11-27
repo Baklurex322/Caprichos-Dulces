@@ -69,6 +69,12 @@ function activarCategoria(elemento){
     document.getElementById("galletas").classList.remove("desactivado")
     document.getElementById("roles").classList.add("desactivado")
   }
+  if(elemento === 'roles'){
+    document.getElementById("pasteles").classList.add("desactivado")
+    document.getElementById("galletas").classList.add("desactivado")
+    document.getElementById("roles").classList.remove("desactivado")
+  }
+
 
   
 }

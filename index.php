@@ -19,6 +19,9 @@
 </head>
 <body>
     <!-- Barra de navegacion -->
+    
+    <?php include 'nav.php'; ?>
+    <!-- fin del nav--->
     <div id="nav-placeholder"></div>
     <script>
         fetch("nav.html")
@@ -31,7 +34,7 @@
     <main id="banner">
         <header>
             <button onclick="location.href='contacto.html'">Contacto</button>
-            <button onclick="location.href='catologo.html'">Cat&aacute;logo</button>
+            <button onclick="location.href='catologo.html'">Catalogo</button>
         </header>
     </main>
     <!-- Pie de pagina -->

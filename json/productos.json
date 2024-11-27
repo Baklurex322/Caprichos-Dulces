@@ -1,0 +1,36 @@
+{"ListaProductos":[
+    {
+        "nombre":"Pastel",
+        "extras":["Nuez","Galleta", "Malvavisco"],
+        "sabores":["Chocolate", "Vainilla", "Naranja"],
+        "precio" : 480,
+        "cantidad":1,
+        "imagen":""
+    },
+    {
+        "nombre":"Galletas",
+        "extras":["Nuez","Galleta", "Malvavisco"],
+        "sabores":["Chocolate", "Vainilla", "Naranja"],
+        "precio" : 560,
+        "cantidad":1,
+        "imagen":""
+    },
+    {
+        "nombre":"Roles",
+        "extras":["Nuez","Galleta", "Malvavisco"],
+        "sabores":["Canela", "Vainilla", "Naranja"],
+        "precio" : 380,
+        "cantidad":1,
+        "imagen":""
+    },
+    {
+        "nombre":"Pay",
+        "extras":["Nuez","Galleta", "Malvavisco"],
+        "sabores":["Limon", "Guayaba", "Queso"],
+        "precio" : 450,
+        "cantidad":1,
+        "imagen":""
+    }
+    
+
+]}

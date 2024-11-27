@@ -8,7 +8,7 @@
     <div class="btn-nav">
         <button onclick="location.href='index.html'">Inicio</button>
         <button onclick="location.href='contacto.html'">Contacto</button>
-        <button onclick="location.href='catologo.html'">Cat&aacute;logo</button>
+        <button onclick="location.href='catologo.html'">Catalogo</button>
         <button onclick="location.href='pedidoCliente.html'">Pedido</button>
     </div>
 </nav>

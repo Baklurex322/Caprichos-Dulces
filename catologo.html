@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <title>Cat&aacute;logo</title>
 
     <!-- Css predetemidados -->
     <link rel="stylesheet" href="css/reset.css">
@@ -33,30 +33,69 @@
           <div id="Producto-2" class="productoAgregado">Producto</div>
         </div>
       </div>
-        <h1 class="marginPage">Catalogo</h1>
+        <h1 class="marginPage">Cat&aacute;logo</h1>
         <section id="carruselSect">
             <div id="carrusel" class="slider marginPage">
                 <div id="carrusel-slides" class="slides">
                   <div class="slide" onclick="activarCategoria('pasteles')">1</div>
                   <div class="slide" onclick="activarCategoria('galletas')">2</div>
-                  <div class="slide" onclick="roles()">3</div>
+                  <div class="slide" onclick="activarCategoria('roles')">3</div>
                   <div class="slide">4</div>
                   <div class="slide">5</div>
-                  <div class="slide">6</div>
-                  <div class="slide">7</div>
-                  <div class="slide">8</div>
-                  <div class="slide">9</div>
-                  <div class="slide">10</div>
+                  
                 </div>
-                <button class="btn-prev">
-                <button class="btn-next">
+                <button class="btn-prev"></button>
+                <button class="btn-next"></button>
               </div>
         </section>
 
         <section id="pasteles" class="contenedor desactivado">
             <div class="cont-producto marginPage">
                 <div class="img-producto">
-                    <img class="img-pro" src="images/Flor amarilla.jpg" alt="">
+                    <img class="img-pro" src="images/fruitCake.jpg" alt="">
+                </div>
+
+                <div class="info-producto">
+                    <h2 class="nombreProducto">Nombre del Producto</h2>
+                    <div class="detalles">
+                        <div class="eleccion">
+                            <h3>Extras</h3>
+                            <div class="radioForm marginDetalles">
+                                <input type="checkbox" name="extra" value="1">Nuez
+                                <input type="checkbox" name="extra" value="2">Galleta
+                                <input type="checkbox" name="extra" value="3">Malvavisco
+                            </div>
+                            <h3>Sabores</h3>
+                            <select name="select" class="marginDetalles selectSabores">
+                                <option value="value1">Chocolate</option>
+                                <option value="value2">Vainilla</option>
+                                <option value="value3">Naranja</option>
+                              </select>
+                        </div>
+
+                        <div class="cantidad">
+                            <h3 class="costo">Precio producto base</h3>
+                            <h3 class="marginDetalles">$340</h3>
+                            <h3>Cantidad</h3>
+                            <input class="marginDetalles selectSabores" style="text-align: left;" type="number" name="cantidadProducto" id="cantidadProducto" placeholder="0" oninput="validarNumero(this)">
+                            <script>
+                                function validarNumero(input) {
+                                  if (input.value.length > 3) {
+                                    input.value = input.value.slice(0, 3); // Limita a 3 cifras
+                                  }
+                                }
+                                </script>
+                        </div>
+                    </div>
+                    <textarea name="textDetalles" id="textDetalles" class="marginPage textDetalles" type="" placeholder="Escribir detalles del pedido"></textarea>
+                    <input class="marginPage btnDetalles btn-css" type="submit" value="Agregar">
+                </div>
+            </div>
+        </section>
+        <section id="galletas" class="contenedor desactivado">
+            <div class="cont-producto marginPage">
+                <div class="img-producto">
+                    <img class="img-pro" src="images/cookieBox.jpg" alt="">
                 </div>
 
                 <div class="info-producto">
@@ -79,7 +118,7 @@
 
                         <div class="cantidad">
                             <h3>Precio producto base</h3>
-                            <h3 class="marginDetalles">$340</h3>
+                            <h3 class="marginDetalles">$280</h3>
                             <h3>Cantidad</h3>
                             <input class="marginDetalles selectSabores" style="text-align: left;" type="number" name="cantidadProducto" id="cantidadProducto" placeholder="0" oninput="validarNumero(this)">
                             <script>
@@ -96,10 +135,48 @@
                 </div>
             </div>
         </section>
-        <section id="galletas" class="contenedor desactivado">
-
-        </section>
         <section id="roles" class="contenedor desactivado">
+          <div class="cont-producto marginPage">
+            <div class="img-producto">
+                <img class="img-pro" src="images/IMG-20220305-WA0005.jpeg" alt="">
+            </div>
+
+            <div class="info-producto">
+                <h2>Nombre del Producto</h2>
+                <div class="detalles">
+                    <div class="eleccion">
+                        <h3>Extras</h3>
+                        <div class="radioForm marginDetalles">
+                            <input type="checkbox" name="extra" value="1">Nuez
+                            <input type="checkbox" name="extra" value="2">Galleta
+                            <input type="checkbox" name="extra" value="3">Malvavisco
+                        </div>
+                        <h3>Sabores</h3>
+                        <select name="select" class="marginDetalles selectSabores">
+                            <option value="value1">Queso</option>
+                            <option value="value2">Lim&oacute;n</option>
+                            <option value="value3">Guayaba</option>
+                          </select>
+                    </div>
+
+                    <div class="cantidad">
+                        <h3>Precio producto base</h3>
+                        <h3 class="marginDetalles">$300</h3>
+                        <h3>Cantidad</h3>
+                        <input class="marginDetalles selectSabores" style="text-align: left;" type="number" name="cantidadProducto" id="cantidadProducto" placeholder="0" oninput="validarNumero(this)">
+                        <script>
+                            function validarNumero(input) {
+                              if (input.value.length > 3) {
+                                input.value = input.value.slice(0, 3); // Limita a 3 cifras
+                              }
+                            }
+                            </script>
+                    </div>
+                </div>
+                <textarea name="textDetalles" id="textDetalles" class="marginPage textDetalles" type="" placeholder="Escribir detalles del pedido"></textarea>
+                <input class="marginPage btnDetalles btn-css" type="submit" value="Agregar">
+            </div>
+        </div>
 
         </section>
     </main>
