@@ -6,6 +6,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .division-footer{
@@ -37,7 +38,9 @@ footer h2{
     font-size: 1.2em;
 }
 footer h3{
-font-size: .8em;
+font-size: 1em;
+    color: white;
+    font-weight: 400;
 }
 /*
 */

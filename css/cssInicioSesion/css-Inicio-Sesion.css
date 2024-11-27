@@ -4,6 +4,9 @@ main{height: 100vh; width: 100%; display: flex;}
     width: 60%;
     height: 100%;
     background-color: antiquewhite;
+    background-image: url(../../images/fruitCake.jpg);
+    background-size: cover;
+    
 }
 
 .IS-form{
