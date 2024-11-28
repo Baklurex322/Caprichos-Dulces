@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Inventario Medieval</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/Papiro3.png">
+            <div>Mi Inventario Medieval</div>
+            
+        </header>
+        <div id="contenido-centrado">
+            <div id="ColeccionItems">
+                <!-- ---------------------- Item Plantilla ------------------------ -->
+                <div class="ContenedorItem">
+                    <div class="Imagen"></div>
+                    <div class="Titulo">
+                        Titulo del Item
+                    </div>
+                    <div class="Descripcion">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus condimentum sapien, quis euismod turpis dignissim porttitor. Morbi porta at sem nec ornare. Nulla sed dui mauris. Duis ex ipsum, vehicula ac tempor et, pulvinar ac tellus. Suspendisse accumsan mollis massa. Vivamus interdum lorem et nisl viverra, sit amet aliquet sem pulvinar. 
+                    </div>
+                    <img class="Icono_Borrar" src="img/icono_borrar.svg">
+                    <img class="Icono_Editar" src="img/icono_editar.svg">
+
+                    <div class="PanelCreacionItem">
+                        <div class="CrearItem_titulo">
+                            Ingrese el Titulo:
+                        </div>
+                        <input type="text" class = "inputTitulo" placeholder="Mi Titulo" >
+                        <div class="CrearItem_instruccionImagen">
+                            Hehe una img:
+                        </div>
+                         <input type="file" class="input_imagen"> 
+                        <img >
+                        <div class="CrearItem_titulo">
+                            Ingrese una descripción:
+                        </div>
+                        <textarea rows="4" cols="50">full text hehe</textarea>
+                        <button type="button">Save item</button>
+                    </div>
+                </div>
+                <!-- ---------------------- Item Plantilla ------------------------ -->
+                <div class="PantallaAgregarItem" onclick="ClickAgregarItm()">
+                    <img class="icono_agregar" src="img/icono_agregar.svg"/>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+    </body>
+    <script src="js/consultarItems.js"></script>
+</html>

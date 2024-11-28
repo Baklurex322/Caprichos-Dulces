@@ -31,3 +31,7 @@ header button{
 header button:hover{
     filter: brightness(80%);
 }
+
+footer{
+    margin: 0 !important;
+}

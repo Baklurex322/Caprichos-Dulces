@@ -152,6 +152,7 @@ main{}
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     transition: all .5s ease;
+    justify-content: center;
   }
   .slides .slide {
     scroll-snap-align: start;
@@ -166,7 +167,7 @@ main{}
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 20px;
     transform: translateX(0px);
   }
   
