@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador</title>
 
     <!-- Css predetemidados -->
+
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/main.css">
@@ -14,117 +17,79 @@
     <link rel="stylesheet" href="css/cssPrincipal.css">
     <link rel="stylesheet" href="css/cssCatologo/css-catalogo.css">
     <link rel="stylesheet" href="css/cssAdmin/css-Admin.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
     <!-- Encabezado -->
-    <button onclick="subirPagina()" id="btnSubir">Subir</button>
+    <header>
+        <img src="images/liston-04.png">
+        <div>Administrador</div>
+        <br><button id="botonSalir" style="width: 150px; position: fixed; color: #B0578D;">Cerrar
+            Sesi&oacute;n</button><br><br>
 
-    <main>
-        <section id="agregarProducto-" class="contenedor agregarProductos">
-            <div class="cont-producto marginPage">
-                <div class="img-producto">
-                    <input class="img-pro" type="file">
+    </header>
+    <div id="contenido-centrado">
+        <div id="ColeccionItems">
+            <!-- ---------------------- Item Plantilla ------------------------ -->
+            <div class="ContenedorItem">
+                <div class="Imagen"></div>
+                <div class="Titulo">
+                    Titulo del Item
                 </div>
+                <div class="Descripcion">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus condimentum sapien, quis
+                    euismod turpis dignissim porttitor. Morbi porta at sem nec ornare. Nulla sed dui mauris. Duis ex
+                    ipsum, vehicula ac tempor et, pulvinar ac tellus. Suspendisse accumsan mollis massa. Vivamus
+                    interdum lorem et nisl viverra, sit amet aliquet sem pulvinar.
+                </div>
+                <img class="Icono_Borrar" src="images/editar-icon.svg" />
+                <img class="Icono_Editar" src="images/delete-icon.svg" />
 
-                <div class="info-producto">
-                    <h2>Nombre del Producto</h2>
-                    <div class="detalles">
-                        <div class="eleccion">
-                            <h3>Extras</h3>
-                            <div class="lista-container">
-                                <input type="text" class="input-item"placeholder="Añadir nueva tarea" />
-                                <button class="btn-agregar">Añadir</button>
-                                <ul class="lista"></ul>
-                              </div>
-                            <h3>Sabores</h3>
-                            <div class="lista-container">
-                                <input type="text"class="input-item" id="sabor-input" placeholder="Añadir nueva tarea" />
-                                <button class="btn-agregar">Añadir</button>
-                                <ul class="lista"></ul>
-                              </div>
-                        </div>
-
-                        <div class="cantidad">
-                            <h3>Precio producto base</h3>
-                            <input type="text">
-                        </div>
+                <div class="PanelCreacionItem">
+                    <div class="CrearItem_titulo">
+                        Ingrese el Titulo:
                     </div>
-                    <textarea name="textDetalles" id="textDetalles" class="marginPage textDetalles" type="" placeholder="Escribir detalles del pedido"></textarea>
-                    <input class="marginPage btnDetalles btn-css" type="submit" value="Agregar">
+                    <input type="text" placeholder="Mi Titulo" />
+                    <div class="CrearItem_instruccionImagen">
+                        Suba una imagen:
+                    </div>
+                    <input type="file" class="input_imagen" />
+                    <!--<img />-->
+                    <div class="CrearItem_titulo">
+                        Ingrese una descripción:
+                    </div>
+                    <textarea rows="4" cols="50">Mi muy detallada descripción del item</textarea>
+                    <button type="button">Guardar</button>
                 </div>
             </div>
-        </section>
 
-          <h1 class="marginPage">Cat&aacute;logo</h1>
-          <section id="carruselSect">
-              <div id="carrusel" class="slider marginPage">
-                  <div id="carrusel-slides" class="slides">
-                    <div class="slide" onclick="activarCategoria('pasteles'); abrirSeccion('pasteles');">1</div>
-                    <div class="slide" onclick="activarCategoria('galletas'); abrirSeccion('galletas');">2</div>
-                    <div class="slide" onclick="roles()">3</div>
-                    <div class="slide">4</div>
-                    <div class="slide">5</div>
-                    <div class="slide">6</div>
-                    <div class="slide">7</div>
-                    <div class="slide">8</div>
-                    <div class="slide">9</div>
-                    <div class="slide">10</div>
-                  </div>
-                  <button class="btn-prev"></button>
-                  <button class="btn-next"></button>
-                </div>
-          </section>
-  
-          <section id="pasteles" class="contenedor desactivado">
-              <div class="cont-producto marginPage">
-                  <div class="img-producto">
-                      <img class="img-pro" src="images/Flor amarilla.jpg" alt="">
-                  </div>
-  
-                  <div class="info-producto">
-                      <h2>Nombre del Producto</h2>
-                      <div class="detalles">
-                        <div class="eleccion">
-                            <h3>Extras</h3>
-                            <div class="lista-container">
-                                <input type="text" class="input-item"placeholder="Añadir nueva tarea" />
-                                <button class="btn-agregar">Añadir</button>
-                                <ul class="lista">
-                                    <li> Nuez <button onclick="eliminarItem(this)">❌</button></li>
-                                    <li> Bombones <button onclick="eliminarItem(this)">❌</button></li>
-                                </ul>
-                              </div>
-                            <h3>Sabores</h3>
-                            <div class="lista-container">
-                                <input type="text"class="input-item" id="sabor-input" placeholder="Añadir nueva tarea" />
-                                <button class="btn-agregar">Añadir</button>
-                                <ul class="lista">
-                                    <li> Chocolate <button onclick="eliminarItem(this)">❌</button></li>
-                                    <li> Vainilla <button onclick="eliminarItem(this)">❌</button></li>
-                                </ul>
-                              </div>
-                        </div>
-  
-                          <div class="cantidad">
-                              <h3>Precio producto base</h3>
-                              <input type="text" value="320">
-                          </div>
-                      </div>
-                      <textarea name="textDetalles" id="textDetalles" class="marginPage textDetalles" type="" placeholder="Escribir detalles del pedido">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus diam erat, vitae suscipit neque laoreet sed. Suspendisse fringilla, justo id luctus sagittis, erat nisl facilisis
-                      </textarea>
-                      <input class="marginPage btnDetalles btn-css" type="submit" value="Actualizar">
-                      <input class="marginPage btnDetalles btn-css" type="submit" value="Eleminar">
-                  </div>
-              </div>
-          </section>
-          <section id="galletas" class="contenedor desactivado">
-  
-          </section>
-          <section id="roles" class="contenedor desactivado">
-  
-          </section>
-      </main>
-      <script src="js/js-admin.js"> </script>      
+            <!-- ---------------------- Item Plantilla ------------------------ -->
+            <div class="PantallaAgregarItem" onclick="crearNuevoItem()">
+                <img class="icono_agregar" src="images/agregar-icon.svg" />
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+       <!--<input type="file" class="input_prueba" />--> 
+    </footer>
 </body>
+<script src="js/consultarItems.js"></script>
+<script>
+
+    const boton = document.getElementById('botonSalir');
+
+
+    boton.addEventListener('click', function () {
+
+        alert("Saliendo de Adminitración");
+
+
+        window.location.href = 'index.html';
+    });
+    
+</script>
+
 </html>
